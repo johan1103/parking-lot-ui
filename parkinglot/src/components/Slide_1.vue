@@ -5,18 +5,22 @@
                   <ul>
                     <li class="active-img">
                         <div class="my-form">
-                          <table>
-                              <tr class="my-tableform">
-                                  <td class="my_tdform">참치</td>
-                                  <td class="my_tdform">고래</td>      
-                              </tr>
+                          <table class="my-tableform">
                               <tr>
-                                  <td class="my_tdform">상어</td>
-                                  <td class="my_tdform">문어</td>
+                                  <td class="my_tdform">1번차</td>
+                                  <td class="my_tdform">2번차</td>
+                                  <td class="my_tdform">3번차</td>
+                                  <td class="my_tdform">4번차</td>
                               </tr>
+                          </table>
+                        </div>
+                        <div class="my-form_2">
+                          <table class="my-tableform">
                               <tr>
-                                  <td class="my_tdform">오징어</td>
-                                  <td class="my_tdform">고등어</td>
+                                  <td class="my_tdform">5번차</td>
+                                  <td class="my_tdform">6번차</td>
+                                  <td class="my_tdform">7번차</td>
+                                  <td class="my_tdform">8번차</td>
                               </tr>
                           </table>
                         </div>
@@ -70,19 +74,24 @@ export default {
 <style>
 .my-form {
     text-align: left;
-    left: 50vw;
+    left: 19vw;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 22vh;
+}
+.my-form_2 {
+    text-align: left;
+    left: 19vw;
+    position: absolute;
+    top: 66vh;
 }
 .my-tableform{
-  width: 100%;
+  width: 60%;
   padding: 30px;
 }
 .my_tdform{
-  position: relative;
-    width: 50%;
-    min-height: 1px;
-    padding: 15px;
+  border: 10px solid #bbada0;
+  width: 50vw;
+  height: 20vh;
+  text-align: center;
 }
 </style>
