@@ -4,18 +4,23 @@
                 <div id="image-slider">
                   <ul>
                     <li class="active-img">
-                      <div class="slide-caption">
-                        <div >
-                          안녕하쎄여
+                        <div class="my-form">
+                          <table>
+                              <tr class="my-tableform">
+                                  <td class="my_tdform">참치</td>
+                                  <td class="my_tdform">고래</td>      
+                              </tr>
+                              <tr>
+                                  <td class="my_tdform">상어</td>
+                                  <td class="my_tdform">문어</td>
+                              </tr>
+                              <tr>
+                                  <td class="my_tdform">오징어</td>
+                                  <td class="my_tdform">고등어</td>
+                              </tr>
+                          </table>
                         </div>
-                        <form>
-                          <div>
-                            1번 폼
-                          </div>
-                          <div>
-                            2번 폼
-                          </div>
-                        </form>
+                      <div class="slide-caption">
                         <h6>New Arrival</h6>
                         <h2>Beautiful<br>Earth</h2>
                       </div>
@@ -46,11 +51,38 @@
 </template>
 
 <script>
-export default {
+import parkingApi from '@/api/parking';
 
+export default {
+  data(){
+    return{
+      parkingValues: []
+    }
+  },
+  created(){
+    parkingApi.getParkBoolValue().then(response=>{
+      this.parkingValues=[].concat(response.data)
+    })
+  }
 }
 </script>
 
 <style>
-
+.my-form {
+    text-align: left;
+    left: 50vw;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.my-tableform{
+  width: 100%;
+  padding: 30px;
+}
+.my_tdform{
+  position: relative;
+    width: 50%;
+    min-height: 1px;
+    padding: 15px;
+}
 </style>
