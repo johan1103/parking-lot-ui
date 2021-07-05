@@ -7,20 +7,20 @@
                         <div class="my-form">
                           <table class="my-tableform">
                               <tr>
-                                  <td class="my_tdform">1번차</td>
-                                  <td class="my_tdform">2번차</td>
-                                  <td class="my_tdform">3번차</td>
-                                  <td class="my_tdform">4번차</td>
+                                  <td class="my_tdform" v-if="parkingValues[0]">{{parkingValues[0]["1"][2]}}</td>
+                                  <td class="my_tdform" v-if="parkingValues[0]">{{parkingValues[0]["2"][2]}}</td>
+                                  <td class="my_tdform" v-if="parkingValues[0]">{{parkingValues[0]["3"][2]}}</td>
+                                  <td class="my_tdform" v-if="parkingValues[0]">{{parkingValues[0]["4"][2]}}</td>
                               </tr>
                           </table>
                         </div>
                         <div class="my-form_2">
                           <table class="my-tableform">
                               <tr>
-                                  <td class="my_tdform">5번차</td>
-                                  <td class="my_tdform">6번차</td>
-                                  <td class="my_tdform">7번차</td>
-                                  <td class="my_tdform">8번차</td>
+                                  <td class="my_tdform" v-if="parkingValues[0]">{{parkingValues[0]["5"][2]}}</td>
+                                  <td class="my_tdform" v-if="parkingValues[0]">{{parkingValues[0]["6"][2]}}</td>
+                                  <td class="my_tdform" v-if="parkingValues[0]">{{parkingValues[0]["7"][2]}}</td>
+                                  <td class="my_tdform" v-if="parkingValues[0]">{{parkingValues[0]["8"][2]}}</td>
                               </tr>
                           </table>
                         </div>
@@ -60,7 +60,7 @@ import parkingApi from '@/api/parking';
 export default {
   data(){
     return{
-      parkingValues: []
+      parkingValues: [],
     }
   },
   created(){
@@ -85,13 +85,13 @@ export default {
     top: 66vh;
 }
 .my-tableform{
-  width: 60%;
   padding: 30px;
+  table-layout: fixed;
 }
 .my_tdform{
   border: 10px solid #bbada0;
-  width: 50vw;
-  height: 20vh;
+  width: 15vw;
+  height: 14vh;
   text-align: center;
 }
 </style>
