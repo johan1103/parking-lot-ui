@@ -22,7 +22,25 @@
             <li><a href="#5"><img src="assets/images/icon-4.png" alt=""> <em>Contact Us_2</em></a></li>
           </ul>
         </nav>
+        <!-- 슬라이드 개인정보메뉴 -->
         
+          <div class="VirtualView">
+            <div class="hideMenuBody" id="hideMenuBodyId">
+              <div>Menu 1</div>
+              <div>Menu 2</div>
+              <div>Menu 3</div>
+              <div>Menu 4</div>
+              <div>Menu 5</div>
+              <div onclick="closeLeftMenu(); return false;">Close</div>
+            </div>
+
+            <div class="circleBt" id="circleBt" onclick="showLeftMenu(this); return false;">
+              <div style="margin-top: 13px;"></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        <!--  ---------------------------->
         <div class="slides">
           <Slide1 />
           <Slide2 />

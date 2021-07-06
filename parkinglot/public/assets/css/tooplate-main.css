@@ -234,7 +234,7 @@ nav a::before {
 }
 .logo {
 	margin-top: 0px;
-  top: 0;
+  top: 0vh;
   left: 0;
   z-index: 999999;
   position: fixed;
@@ -362,7 +362,7 @@ nav a::before {
 #thumbnail {
   position: absolute;
   z-index: 99999;
-  bottom: 30px;
+  bottom: 80vh;
   right: 30px;
 }
 #thumbnail ul {
@@ -619,6 +619,75 @@ nav a::before {
 }
 
 
+  /*슬라이드바*/
+	.VirtualView {
+		width: 400px;
+		height: 600px;
+		overflow: hidden;
+		border-style: none;
+		position: absolute;
+    z-index: 99999;
+	}
+
+	.hideMenuBody {
+		width: 0px;
+		height: 100%;
+		background-color: #4d4d4d;
+		padding-top: 100px;
+		transition: transform 600ms;
+		transform: translate(-150px, 0px);
+
+		-ms-transition: -ms-transform 600ms;
+		-webkit-transition: -webkit-transform 600ms;
+		-moz-transition: -moz-transform 600ms;
+		-o-transition: -o-transform 600ms;
+
+		-ms-transform: translate(-150px, 0px);
+		-webkit-transform: translate(-150px, 0px);
+		-moz-transform: translate(-150px, 0px);
+		-o-transform: translate(-150px, 0px);
+	}
+
+	.hideMenuBody > div {
+		width: 0px;
+		height: 30px;
+		line-height: 30px;
+		vertical-align: middle;
+		text-align: center;
+		color: #ffffff;
+		cursor: pointer;
+		margin-bottom: 5px;
+		box-shadow: 1px 1px 0px #ffffff;
+	}
+
+	.hideMenuBody > div:hover {
+		background-color: #808080;
+	}
+
+	.circleBt {
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		bottom: 10px;
+		left: 10px;
+		border-radius: 25px;
+		cursor: pointer;
+		background: radial-gradient(#4d4d4d 50%, #ffffff 60%, #4d4d4d 10%);
+	}
+
+	.circleBt:hover {
+		background: radial-gradient(#A5A5A5 50%, #ffffff 60%, #A5A5A5 10%);
+	}
+
+	.circleBt > div {
+		width: 24px;
+		height: 5px;
+		background-color: #ffffff;
+		margin-top: 5px;
+	    margin-left: 13px;
+	}
+
+
 
 
 /* Responsive Style */
@@ -641,6 +710,18 @@ nav a::before {
 	top: 220%!important;
 	transform: translateY(-220%);
   }
+  .logo {
+    margin-top: 0px;
+    top: 85vh;
+    left: 0;
+    z-index: 999999;
+    position: fixed;
+     display: inline-block;
+    text-align: center;
+    background-color: #faf5b2;
+    height: 15%;
+    width: 15%;
+  }
   .logo h1 {
     display: none;
   }
@@ -649,7 +730,7 @@ nav a::before {
     line-height: 100px;
     height: 100px;
     width: 15vw;
-    top: 0;
+    top: 85vh;
     left: 0;
     z-index: 999999;
     position: fixed;
@@ -662,7 +743,7 @@ nav a::before {
     background-color: #faf5b2;
   }
   nav {
-    top: 0vh;
+    top: 88vh;
     height: 100px;
     width: 85vw;
     margin-left: 15vw;
@@ -761,4 +842,73 @@ nav a::before {
     margin-bottom: 20px;
   }
 
+  /*슬라이드바*/
+	.VirtualView {
+		
+    width: 400px;
+		height: 600px;
+		overflow: hidden;
+		border-style: none;
+    z-index: 99999;
+    
+		position: fixed;
+	}
+	.hideMenuBody {
+		position: fixed;
+		width: 0px;
+		height: 100%;
+		background-color: #4d4d4d;
+		padding-top: 100px;
+		transition: transform 600ms;
+		transform: translate(-150px, 0px);
+
+		-ms-transition: -ms-transform 600ms;
+		-webkit-transition: -webkit-transform 600ms;
+		-moz-transition: -moz-transform 600ms;
+		-o-transition: -o-transform 600ms;
+
+		-ms-transform: translate(-31vw, 0px);
+		-webkit-transform: translate(-31vw, 0px);
+		-moz-transform: translate(-31vw, 0px);
+		-o-transform: translate(-31vw, 0px);
+	}
+
+	.hideMenuBody > div {
+		width: 30vw;
+		height: 10vh;
+		line-height: 30px;
+		vertical-align: middle;
+		text-align: center;
+		color: #ffffff;
+		cursor: pointer;
+		margin-bottom: 5px;
+		box-shadow: 1px 1px 0px #ffffff;
+	}
+
+	.hideMenuBody > div:hover {
+		background-color: #808080;
+	}
+
+	.circleBt {
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		bottom: 10px;
+		left: 10px;
+		border-radius: 25px;
+		cursor: pointer;
+		background: radial-gradient(#4d4d4d 50%, #ffffff 60%, #4d4d4d 10%);
+	}
+
+	.circleBt:hover {
+		background: radial-gradient(#A5A5A5 50%, #ffffff 60%, #A5A5A5 10%);
+	}
+
+	.circleBt > div {
+		width: 24px;
+		height: 5px;
+		background-color: #ffffff;
+		margin-top: 5px;
+	    margin-left: 13px;
+	}
 }
