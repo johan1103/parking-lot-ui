@@ -845,9 +845,8 @@ nav a::before {
   /*슬라이드바*/
 	.VirtualView {
 		
-    width: 400px;
-		height: 600px;
-		overflow: hidden;
+    width: 20vw;
+		height: 10vh;
 		border-style: none;
     z-index: 99999;
     

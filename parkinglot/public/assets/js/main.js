@@ -157,9 +157,10 @@ function showLeftMenu(){
 function closeLeftMenu() {
     var circleBtObj = document.getElementById('circleBt');
     var leftMenuObj = document.getElementById('hideMenuBodyId');
-
+    var virtualViewObj = document.getElementById('VirtualView');
     circleBtObj.style['display'] = "block";
-
+    virtualViewObj.style['width']="20vw";
+    virtualViewObj.style['height']="10vh";
     leftMenuObj.style['display']="none";
     leftMenuObj.removeAttribute("style");
 }
